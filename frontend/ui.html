@@ -49,16 +49,22 @@
   <td><input type="password" name="pass" size="20"></td>
   <td>%[typo:hint]</td>
 </tr><tr>
+  <td>%[trim]</td>
+  <td colspan="2"><label><input type="checkbox" name="trim">
+    %[trim:hint]</label></td>
+</tr><tr>
   <th>%[xsrf]</th>
   <td><input type="text" name="xsrf" size="20"></td>
   <td>%[xsrf:hint]</td>
 </tr></table>
 
-<p><input type="submit" value="%[submit]">
+<table id="result-tbl" class="minw1 va-m"><tr>
+  <td><input type="submit" value="%[submit]">
   &nbsp;
   &mdash;&gt;
   &nbsp;
-  %[result]</p>
+  </td><td>%[result]</td>
+</tr></table>
 </form>
 <!-- @knee -->
 

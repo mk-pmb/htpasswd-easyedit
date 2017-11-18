@@ -4,7 +4,7 @@
 body, td, th { font-size: 15px; }
 th { font-weight: bold; }
 table { margin-bottom: 1em; }
-#user-tbl select { resize: vertical; min-height: 5em; }
+select.users { resize: vertical; min-height: 5em; }
 .minw1 select, .minw1 input { min-width: 20em; }
 .no-user { text-align: center; }
 iframe { border: 1px solid grey; width: 60em; }
@@ -22,7 +22,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   margin-top: 0em;
-  margin-bottom: 0em;
+  margin-bottom: 1em;
 }
 
 th, td {
@@ -31,7 +31,7 @@ th, td {
   padding: 0.1em;
   padding-right: 1em;
 }
-th { vertical-align: bottom; font-weight: normal; }
+th { vertical-align: bottom; font-weight: bold; }
 th:first-child, td:first-child { padding-left: 0; }
 th:last-child, td:last-child, td.last-cell { padding-right: 0; }
 

@@ -1,0 +1,3 @@
+
+/[a-z][a-z]_*.trans.sed
+/[a-z][a-z]_*.ui.html
