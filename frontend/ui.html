@@ -4,9 +4,7 @@
   <title>htpasswd-easyedit-php</title>
   <meta http-equiv="Content-Script-Type" content="text/javascript">
   <meta http-equiv="Content-Style-Type" content="text/css">
-  <style>
-    @import url("style.css");
-  </style>
+  <!-- @style -->
   <!-- @head -->
 </head><body>
 <!-- @neck -->
@@ -17,7 +15,7 @@
 <table id="file-tbl"><tr>
   <th>%[file:select]</th>
   <td><select size="1" name="file">
-    <!-- @files -->
+    <!-- @listfiles -->
     </select></td>
   <td><input type="button" name="scan_users" value="%[users:load]"></td>
 </tr></table>
@@ -40,25 +38,29 @@
     <div>%[users:auto-add]</div></td>
 </tr></table>
 
-<table id="pass-tbl" class="minw1 va-m"><tr>
+<table id="pass-tbl" class="va-m"><tr>
   <th>%[setpw:hidden]</th>
-  <td><input type="password" name="pass" size="20"></td>
+  <td class="minw1"><input type="password" name="pass" size="20"></td>
   <td>%[setpw:hidden:hint]</td>
 </tr><tr>
   <td>%[typo]</td>
-  <td><input type="password" name="pass" size="20"></td>
+  <td class="minw1"><input type="password" name="pass" size="20"></td>
   <td>%[typo:hint]</td>
 </tr><tr>
   <td>%[trim]</td>
-  <td colspan="2"><label><input type="checkbox" name="trim">
-    %[trim:hint]</label></td>
+  <td colspan="2">
+    <label><input type="checkbox" checked="checked"
+      name="trim_sp">%[trim:space]</label>
+    <label><input type="checkbox" checked="checked"
+      name="trim_qb">%[trim:quotes_parens]</label>
+    </td>
 </tr><tr>
   <th>%[xsrf]</th>
-  <td><input type="text" name="xsrf" size="20"></td>
+  <td class="minw1"><input type="text" name="xsrf" size="20"></td>
   <td>%[xsrf:hint]</td>
 </tr></table>
 
-<table id="result-tbl" class="minw1 va-m"><tr>
+<table id="result-tbl" class="va-m"><tr>
   <td><input type="submit" value="%[submit]">
   &nbsp;
   &mdash;&gt;

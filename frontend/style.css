@@ -1,6 +1,4 @@
-﻿@charset "UTF-8";
-/* -*- coding: UTF-8, tab-width: 2 -*- */
-
+﻿
 body, td, th { font-size: 15px; }
 th { font-weight: bold; }
 table { margin-bottom: 1em; }
@@ -34,5 +32,4 @@ th, td {
 th { vertical-align: bottom; font-weight: bold; }
 th:first-child, td:first-child { padding-left: 0; }
 th:last-child, td:last-child, td.last-cell { padding-right: 0; }
-
-/*scroll*/
+td label { display: inline-block; }

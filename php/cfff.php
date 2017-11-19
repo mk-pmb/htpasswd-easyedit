@@ -3,7 +3,7 @@
 return call_user_func(function () {
   static $cache = NULL, $r = NULL;
   if ($r) { return $r; }
-  $r = function ($n) using (&$cache) {
+  $r = function ($n) use (&$cache, &$r) {
     $f = @$cache[$n];
     if (!$f) { $f = $cache[$n] = require(__DIR__ . '/' . $n . '.php'); }
     $a = func_get_args();
