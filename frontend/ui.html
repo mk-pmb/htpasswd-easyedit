@@ -9,7 +9,7 @@
 </head><body>
 <!-- @neck -->
 
-<form name="htpw" method="post" action="?">
+<form name="htpw" method="post" action="?" target="result">
 <h2>%[form:title]</h2>
 
 <table id="file-tbl"><tr>
@@ -17,7 +17,8 @@
   <td><select size="1" name="file">
     <!-- @listfiles -->
     </select></td>
-  <td><input type="button" name="scan_users" value="%[users:load]"></td>
+  <td><input type="button" name="scan_users" disabled="disabled"
+    value="%[users:load]"></td>
 </tr></table>
 
 <table id="user-tbl" class="minw1"><tr>
