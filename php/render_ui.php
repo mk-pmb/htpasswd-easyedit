@@ -1,18 +1,20 @@
 <?php # -*- coding: utf-8, tab-width: 2 -*-
 
 return function ($cfff, $cfg) {
-  $fefile = $cfff('read_frontend_file', $cfg);
+  $fefile = $cfff('frontend_readfile', $cfg);
 
   if (@$cfg['style_html'] === NULL) {
     $cfg['style_html'] = "<style>\n" . str_replace("\n", "\n    ",
       trim($fefile('style.css'))) . "\n  </style>";
   }
 
+  $xmldefuse = $cfff('xmldefuse');
+  $optlist = function ($v) use (&$xmldefuse) {
+    return "<option>" . $xmldefuse($v) . "</option>";
+  };
+
   if (@$cfg['listfiles_html'] === NULL) {
-    $xmldefuse = $cfff('xmldefuse');
-    $cfg['listfiles_html'] = array_map(function ($fn) use (&$xmldefuse) {
-      return "<option>" . $xmldefuse($fn) . "</option>";
-    }, $cfg['listfiles']);
+    $cfg['pwlists_html'] = array_map($optlist, $cfg['listfiles']);
   }
 
   $ui_html = $fefile('ui.html');

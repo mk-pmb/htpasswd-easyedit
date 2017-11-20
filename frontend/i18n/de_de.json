@@ -1,4 +1,4 @@
-﻿{ "form:title": "Passwort-Listen bearbeiten",
+﻿{ "form:title": "Passwortlisten bearbeiten",
   "file:select": "In dieser Liste:",
   "users:load": "lade Namen",
   "users:head": "… setze für diese Benutzerkennung:",
@@ -18,4 +18,20 @@
   "xsrf:hint": "leer oder falsch = zeige neue",
   "submit": "Absenden",
   "result": "Ergebnis:",
+
+  "err:": "Fehler:",
+  "file:invalid": "Ungültige Passwortliste",
+  "badchar:user": "Ungültiges Zeichen im Namen an Position:",
+  "badchar:pass": "Ungültiges Zeichen im Passwort an Position:",
+  "typo:diff": "Passwort stimmt nicht mit Wiederholung überein.",
+
+  "xsrf:unavail": "Server unterstützt das gewählte TAN-Verfahren nicht.",
+  "xsrf:code4set": "Passwort dieses Zugangs ändern? / Mit dieser TAN:",
+  "xsrf:code4del": "Diesen Zugang LÖSCHEN? / Mit dieser TAN:",
+
+  "shell:nospawn": "Passwortänderung fehgeschlagen: Systembefehl konnte nicht starten.",
+  "shell:failed": "Passwortänderung fehgeschlagen. Rückgabewert und Ausgabe:",
+  "shell:set_done": "Das neue Passwort wurde gespeichert.",
+  "shell:del_done": "Zugang wurde gelöscht und/oder besteht nicht mehr.",
+
   "": null }

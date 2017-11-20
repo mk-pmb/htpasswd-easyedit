@@ -1,7 +1,6 @@
 <?php # -*- coding: utf-8, tab-width: 2 -*-
 
-return function ($cfff, $cfg_container) {
-  $cfg =& $cfg_container[0];
+return function ($cfff, $cfg) {
   $resolve = function ($key) use (&$cfg, &$resolve) {
     $isdir = (substr($key, -4) === '_dir');
     if ((!$isdir) && (substr($key, -5) !== '_file')) { return; }
@@ -24,4 +23,5 @@ return function ($cfff, $cfg_container) {
     return $val;
   };
   array_map($resolve, array_keys($cfg));
+  return $cfg;
 };

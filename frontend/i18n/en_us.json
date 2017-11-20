@@ -1,4 +1,4 @@
-﻿{ "form-title": "Edit password lists",
+﻿{ "form:title": "Edit password lists",
   "file:select": "In this list:",
   "users:load": "load usernames",
   "users:head": "For this username:",
@@ -11,8 +11,27 @@
   "setpw:hidden:hint": "empty = delete user account",
   "typo": "Check for typos?",
   "typo:hint": "empty or password again",
+  "trim": "Trim sides?",
+  "trim:space": "whitespace",
+  "trim:quotes_parens": "quotes, parens, brackets",
   "xsrf": "Authorization code:",
   "xsrf:hint": "empty or invalid = request a new one",
   "submit": "Send form",
   "result": "Result:",
+
+  "err:": "Error:",
+  "file:invalid": "Invalid passwort list",
+  "badchar:user": "Invalid character in namen at position:",
+  "badchar:pass": "Invalid character in password at position:",
+  "typo:diff": "Password and typo check fields differ.",
+
+  "xsrf:unavail": "Server doesn't support the configured authorization mechanism.",
+  "xsrf:code4set": "Change passwort for this user? / Auth code:",
+  "xsrf:code4del": "DELETE this login name? / Auth code:",
+
+  "shell:nospawn": "Failed to modify password: Unable to invoke the system command.",
+  "shell:failed": "Failed to modify password. Exit code and output:",
+  "shell:set_done": "Login information has been saved.",
+  "shell:del_done": "Login has been deleted and/or no longer exist.",
+
   "": null }

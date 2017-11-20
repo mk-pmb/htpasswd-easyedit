@@ -5,7 +5,7 @@ return function ($cfff, $cfg, $text = NULL) {
   if ($i18n) { return $i18n($text); }
 
   $dict = 'i18n/' . strtolower($cfg['i18n']) . '.json';
-  $dict = $cfff('read_frontend_file', $cfg, $dict);
+  $dict = $cfff('frontend_readfile', $cfg, $dict);
   $dict = json_decode($dict, true);
 
   $i18n = function ($text) use (&$dict, &$i18n) {

@@ -14,23 +14,24 @@ return function ($cfff, $cfg) {
     'list_suffix' => '.htpw',
     'frontend_dir' => __DIR__ . '/../frontend',
     'backup_dir' => '<data>/bak',
-    'xsrf_memo_file' => '<backup>/.xsrf-memo.txt',
+    'pwlist' => (string)@$_REQUEST['file'],
+
+    'htpasswd_stdin_sep' => "\x00",
+    'htpasswd_set_cmd' => 'xargs --null htpasswd -b',
+    'htpasswd_del_cmd' => 'xargs --null htpasswd -D',
+
+    'xsrf_token_algo' => 'md5',
+    'xsrf_token_length' => 6,
     ];
-  $cfff('cfg_resolve_paths', [ &$cfg ]);
+  $cfg = $cfff('cfg_resolve_paths', $cfg);
   if (!is_array(@$cfg['listfiles'])) {
     $cfg['listfiles'] = $cfff('cfg_scan_listfiles', $cfg);
   }
 
   $rqmthd = (string)@$_SERVER['REQUEST_METHOD'];
+  if ($rqmthd === 'GET') { return $cfff('render_ui', $cfg); }
+  if ($rqmthd !== 'POST') { die("Unsupported HTTP method.\n"); }
 
-  if ($rqmthd === 'GET') {
-    $cfff('render_ui', $cfg);
-    return;
-  }
-
-  if ($rqmthd !== 'POST') {
-    die("Unsupported HTTP method.\n");
-  }
-
-  print_r($_SERVER);
+  $result = $cfff('setpw', $cfg);
+  $cfff('human_json_combo_reply', $cfg, $result);
 };

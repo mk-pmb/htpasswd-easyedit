@@ -12,7 +12,18 @@ Easy web editor for Apache password lists.
 Usage
 -----
 
-:TODO:
+On PHP webspace:
+
+```php
+<?php
+$htpw_main = require(__DIR__ . '/../../util/htpasswd-easyedit/php/main.php');
+$htpw_main(NULL, [
+  'i18n' => 'en_EN',
+  'xsrf_salt' => 'put random data here',
+  'data_dir' => __DIR__,
+  'list_suffix' => '.pwl',    # your file extension for password lists
+  ]);
+```
 
 
 
