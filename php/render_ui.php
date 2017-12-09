@@ -27,7 +27,7 @@ return function ($cfff, $cfg) {
     if (is_array($ins)) { return $nl . $indent . implode("\n$indent", $ins); }
     return $nl . $indent . (string)@$ins;
   };
-  $ui_html = preg_replace_callback(":(\n?)( *)<!-- @(\\w+) -->:",
+  $ui_html = preg_replace_callback(":(\n?)( *)<!-- @([A-Za-z0-9_]+) -->:",
     $ins_html, $ui_html);
   $ui_html = $cfff('i18n', $cfg, $ui_html);
 

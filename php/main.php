@@ -4,7 +4,7 @@ return function ($cfff, $cfg) {
   if (!$cfff) { $cfff = require(__DIR__ . '/cfff.php'); }
   $cfff('http_headers');
 
-  $check_mandatory_config = function ($slot) use ($cfg) {
+  $check_mandatory_config = function ($slot) use (&$cfg) {
     if (!@$cfg[$slot]) { die("Missing config opt: $slot\n"); }
   };
   array_map($check_mandatory_config, [ 'xsrf_salt', 'data_dir' ]);
@@ -24,6 +24,7 @@ return function ($cfff, $cfg) {
     'xsrf_token_length' => 6,
     ];
   $cfg = $cfff('cfg_resolve_paths', $cfg);
+  $cfg = $cfff('cfg_script_tags', $cfg);
   if (!is_array(@$cfg['listfiles'])) {
     $cfg['listfiles'] = $cfff('cfg_scan_listfiles', $cfg);
   }
