@@ -26,13 +26,13 @@
   <th colspan="3">%[users:head]</th>
 </tr><tr>
   <td><div>%[users:orig]</div>
-    <select size="3" name="user_orig">
+    <select size="3" class="users" name="user_orig">
       <option value="" selected="selected" class="no-user"
        >%[users:skip]</option>
       <!-- @names -->
     </select></td>
   <td><div>%[users:sorted]</div>
-    <select size="3" name="user_sorted">
+    <select size="3" class="users" name="user_sorted">
       <option value="" selected="selected" class="no-user"
        >%[users:skip]</option>
       <!-- @sorted_names -->
@@ -40,6 +40,12 @@
   <td><div>%[users:new]</div>
     <input type="text" id="new-user" name="user_new" size="20"></div>
     <div>%[users:auto-add]</div></td>
+</tr><tr id="user-filter-row" class="not-ready">
+  <td colspan="2">^&mdash;
+    %[users:filter:]
+    <input type="text" id="user-filter" size="20"></div>
+    &mdash;^</td>
+  <td id="user-filter-stats"></td>
 </tr></table>
 
 <table id="pass-tbl" class="va-m"><tr>

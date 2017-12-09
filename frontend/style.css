@@ -3,6 +3,7 @@ body, td, th { font-size: 15px; }
 th { font-weight: bold; }
 table { margin-bottom: 1em; }
 select.users { resize: vertical; min-height: 5em; }
+select.users:not([style*="height:"]) { max-height: 20em; }
 .minw1 select, .minw1 input { min-width: 20em; }
 .no-user { text-align: center; }
 iframe { border: 1px solid grey; width: 60em; }
@@ -33,3 +34,11 @@ th { vertical-align: bottom; font-weight: bold; }
 th:first-child, td:first-child { padding-left: 0; }
 th:last-child, td:last-child, td.last-cell { padding-right: 0; }
 td label { display: inline-block; }
+
+#user-filter-row.not-ready { display: none; }
+#user-filter-row td:first-child { text-align: center; }
+#user-filter-row[data-n-match]     input { border: 2px solid green; }
+#user-filter-row[data-n-match="0"] input { border-color: red; }
+
+
+
