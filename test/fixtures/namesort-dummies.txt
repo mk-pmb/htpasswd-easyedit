@@ -1,0 +1,25 @@
+# -*- coding: utf-8, tab-width: 2 -*-
+olaf-5-dummy:$apr1$.ND8WE9H$WpWQrqBvionqJ3XHPIphq0
+jule-1-dummy:$apr1$0tY4gC.Z$0gQTLeV5E7zjMITDjHSLN1
+dani-1-dummy:$apr1$1DJEQWNo$5egxdysxxFYHIzrlieUEy1
+Dani-2-dummy:$apr1$2lT64cOX$KS6GzO/Lg/hkR50GQ/UW91
+Jule-2-dummy:$apr1$2OlNPE0Z$Czr3Sz5NyqGvIEHuXbrfd.
+Olaf-2-dummy:$apr1$3/K9PsPv$3aSyiYOF2rmbVoJKJ4Msj0
+Jule-5-dummy:$apr1$6H2eU.ut$GR09iqkpZLQrrM8tkwBze.
+Jule-8-dummy:$apr1$7knTTX6d$SS/0u3TK5VH.S6exnL8xl/
+Olaf-4-dummy:$apr1$c./E37qe$3Q/agglhpVViyhApA7IDB0
+Dani-6-dummy:$apr1$Ge7Cb1is$Ptwe9eyi7pqNRwpzWL.88/
+Jule-4-dummy:$apr1$GU05VVri$1gH16wlIPdDWT5C/49e0X/
+olaf-1-dummy:$apr1$HMCvt6Dw$D64H9RkaWy.RbrXt2PEQe.
+olaf-8-dummy:$apr1$JGdkX3.D$kQ1Uwzgiv2fYFbhx6d2FF.
+dani-8-dummy:$apr1$jzCAs.gF$yHMwoBoFQUJuAq8d6hvJb0
+OLAF-3-dummy:$apr1$kUZQBM8J$8GL64uXIKUsb8GZvNgZSi0
+DANI-7-dummy:$apr1$kzwR01GS$YWDExGsT9HDH/TkykvPYS.
+DANI-5-dummy:$apr1$m5XJOXO6$fqFgNdUnjMU4WxVU7Ejf7.
+OLAF-6-dummy:$apr1$P1FfpwYU$zuO2PaMOGClBjLGqjs.lZ.
+DANI-4-dummy:$apr1$QtBsvEf0$NVmjL9TV8PSQpSwMFSyYw0
+JULE-3-dummy:$apr1$Sj8axm5E$6587AP9beSrxLaZ4J3Kaa1
+OLAF-7-dummy:$apr1$SYE81J/Z$TgqkGf5L2dqieWKRICUBh0
+dani-3-dummy:$apr1$uAnfExkn$.vA4ivWgIhvUU.4gdT.w10
+jule-6-dummy:$apr1$w.Sjjxoz$5NkjJLh2jI3KsLVMzQ8h7/
+jule-7-dummy:$apr1$ZitMFlTF$o3mvg5qA0H4MQdjzlTthw.
